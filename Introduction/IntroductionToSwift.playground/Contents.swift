@@ -231,5 +231,70 @@ if firstCard + secondCard == 2 {
     print("Regular cards")
 }
 
+// combining conditions
+let age1 = 12
+let age2 = 21
+
+if age1 > 18 && age2 > 18 {
+    print("Both are over 18")
+}
+
+if age1 > 18 || age2 > 18 {
+    print("At least one is over 18")
+}
+
+// the ternary operator
+let firstCard1 = 11
+let secondCard2 = 10
+print(firstCard1 == secondCard2 ? "Cards are the same" : "Cards are different")
+
+if firstCard1 == secondCard2 {
+    print("Cards are the same")
+} else {
+    print("Cards are different")
+}
+
+// switch statements
+let weather = "sunny"
+
+switch weather {
+case "rain":
+    print("Wrap up warm")
+case "snow":
+    print("Wrap up warm")
+case "sunny":
+    print("Wear sunscreen")
+default:
+    print("Enjoy your day!")
+}
+
+switch weather {
+case "rain":
+    print("Bring an umbrella")
+case "snow":
+    print("Wrap up warm")
+case "sunny":
+    print("Wear sunscreen")
+    fallthrough
+default:
+    print("Enjoy your day!")
+}
+
+// range operators
+let outcome = 85
+
+switch outcome {
+case 0..<85:
+    print("You failed badly.")
+case 50..<85:
+    print("You did OK.")
+default:
+    print("You did great!")
+}
+
+
+
+
+
 
 
